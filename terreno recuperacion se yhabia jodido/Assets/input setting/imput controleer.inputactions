@@ -63,17 +63,6 @@
                 },
                 {
                     "name": "",
-                    "id": "7337b162-6faf-4a59-8cc4-94afad33531d",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "944efe75-cf6c-49ae-9062-5e1c82e20a8d",
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
@@ -91,6 +80,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "straffr",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7337b162-6faf-4a59-8cc4-94afad33531d",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

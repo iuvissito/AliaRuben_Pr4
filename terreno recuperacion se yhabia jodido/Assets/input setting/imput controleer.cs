@@ -35,7 +35,7 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""straff l"",
+                    ""name"": ""straffl"",
                     ""type"": ""Value"",
                     ""id"": ""7015f2f6-8017-4bc4-b287-dec7955f61fb"",
                     ""expectedControlType"": ""Axis"",
@@ -43,7 +43,7 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""straff r"",
+                    ""name"": ""straffr"",
                     ""type"": ""Value"",
                     ""id"": ""40a22f3f-987b-474e-84a4-0f0b3caccc81"",
                     ""expectedControlType"": ""Axis"",
@@ -76,23 +76,12 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""7337b162-6faf-4a59-8cc4-94afad33531d"",
-                    ""path"": ""<Gamepad>/leftStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""944efe75-cf6c-49ae-9062-5e1c82e20a8d"",
                     ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""straff l"",
+                    ""action"": ""straffl"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -103,7 +92,18 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""straff r"",
+                    ""action"": ""straffr"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7337b162-6faf-4a59-8cc4-94afad33531d"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -143,8 +143,8 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
         m_moverse = asset.FindActionMap("moverse", throwIfNotFound: true);
         m_moverse_run = m_moverse.FindAction("run", throwIfNotFound: true);
         m_moverse_move = m_moverse.FindAction("move", throwIfNotFound: true);
-        m_moverse_straffl = m_moverse.FindAction("straff l", throwIfNotFound: true);
-        m_moverse_straffr = m_moverse.FindAction("straff r", throwIfNotFound: true);
+        m_moverse_straffl = m_moverse.FindAction("straffl", throwIfNotFound: true);
+        m_moverse_straffr = m_moverse.FindAction("straffr", throwIfNotFound: true);
         // New action map
         m_Newactionmap = asset.FindActionMap("New action map", throwIfNotFound: true);
         m_Newactionmap_Newaction = m_Newactionmap.FindAction("New action", throwIfNotFound: true);

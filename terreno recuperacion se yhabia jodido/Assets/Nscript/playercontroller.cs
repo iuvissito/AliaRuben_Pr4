@@ -23,15 +23,7 @@ public class playercontroller : MonoBehaviour
         speed = 2f;
         
     }
-    private void OnEnable()
-    {
-        inputcontroller.Enable();
-    }
-
-    private void OnDisable()
-    {
-        inputcontroller.Disable();
-    }
+    
     private void Awake()
     {
         inputcontroller = new Imputcontroleer();
@@ -51,17 +43,29 @@ public class playercontroller : MonoBehaviour
         float strafe = triggerr - triggerl;
         if (strafe != 0)
         {
-            animator.SetBool("straffing", straffing = true);
+            animator.SetBool("straffing",  true);
         }
         else
         { 
-            animator.SetBool("straffing", straffing = false);
+            animator.SetBool("straffing",  false);
         }
-        animator.SetBool("run", running);
+        //animator.SetBool("run",true);
         animator.SetFloat("speed", stickl.y);
         dir = transform.TransformDirection(Vector3.forward);
-        cc.SimpleMove(dir * speed * stickl);
+        print(speed);
+        
+        cc.SimpleMove(dir * speed * stickl.y);
     }
-    
+
+    private void OnEnable()
+    {
+        inputcontroller.Enable();
+    }
+
+    private void OnDisable()
+    {
+        inputcontroller.Disable();
+    }
+
 }
    
