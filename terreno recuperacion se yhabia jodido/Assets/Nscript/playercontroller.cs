@@ -57,7 +57,7 @@ public class playercontroller : MonoBehaviour
         { 
             animator.SetBool("straffing", straffing = false);
         }
-        animator.SetBool("run", running=true);
+        animator.SetBool("run", running);
         animator.SetFloat("speed", stickl.y);
         dir = transform.TransformDirection(Vector3.forward);
         cc.SimpleMove(dir * speed * stickl);

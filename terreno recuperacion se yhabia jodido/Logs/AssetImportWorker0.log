@@ -971,3 +971,34 @@ System memory in use after: 121.1 MB.
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2316.
 Total: 2.043700 ms (FindLiveObjects: 0.189900 ms CreateObjectMapping: 0.054600 ms MarkObjects: 1.625400 ms  DeleteObjects: 0.173100 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 173.840649 seconds.
+  path: Assets/Personajes/Hombre/HOMBRE.controller
+  artifactKey: Guid(f68b0e95c4c1d66418cc39f38e2be640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personajes/Hombre/HOMBRE.controller using Guid(f68b0e95c4c1d66418cc39f38e2be640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a09f8a2de594c66c561c73799c1afa') in 0.019935 seconds
+  Import took 0.023426 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000873 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.889 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1706 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.2 MB.
+System memory in use after: 121.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2319.
+Total: 1.882600 ms (FindLiveObjects: 0.212000 ms CreateObjectMapping: 0.059800 ms MarkObjects: 1.452700 ms  DeleteObjects: 0.157400 ms)
+
