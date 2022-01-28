@@ -33,8 +33,8 @@ public class playercontroller : MonoBehaviour
         inputcontroller.moverse.move.canceled += context => stickl = Vector2.zero;
         inputcontroller.moverse.straffl.performed += context => triggerl = context.ReadValue<float>();
         inputcontroller.moverse.straffl.canceled += context => triggerl = 0f;
-        inputcontroller.moverse.straffr.performed += context => triggerl = context.ReadValue<float>();
-        inputcontroller.moverse.straffr.canceled += context => triggerl = 0f;
+        inputcontroller.moverse.straffr.performed += context => triggerr = context.ReadValue<float>();
+        inputcontroller.moverse.straffr.canceled += context => triggerr = 0f;
 
     }
     // Update is called once per frame
@@ -44,10 +44,24 @@ public class playercontroller : MonoBehaviour
         if (strafe != 0)
         {
             animator.SetBool("straffing",  true);
+            animator.SetFloat("strafinf", strafe);
+            dir = transform.TransformDirection(Vector3.right);
+            speed = 1.8f;
+
+            cc.SimpleMove(dir * strafe * speed);
         }
         else
         { 
             animator.SetBool("straffing",  false);
+        }
+        if(running == true && stickl.y > 0)
+        {
+            animator.SetBool("run",running);
+        }
+        else
+        {
+            animator.SetBool("run", running);
+            
         }
         //animator.SetBool("run",true);
         animator.SetFloat("speed", stickl.y);
