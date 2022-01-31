@@ -15,11 +15,11 @@ E:/gameProject/terreno-de-0-prueba/terreno recuperacion se yhabia jodido
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62879
+63091
 Successfully changed project path to: E:/gameProject/terreno-de-0-prueba/terreno recuperacion se yhabia jodido
 E:/gameProject/terreno-de-0-prueba/terreno recuperacion se yhabia jodido
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 97.77 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 45.55 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,81 +35,397 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56556
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005584 seconds.
+Registered in 0.002303 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 125.65 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 39.76 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.776 seconds
+- Completed reload, in  1.346 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002420 seconds.
+Registered in 0.001199 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 57.24 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 81.20 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.497 seconds
+- Completed reload, in  1.598 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1752 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 122.7 MB.
 System memory in use after: 122.6 MB.
 
 Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2220.
-Total: 3.081600 ms (FindLiveObjects: 0.356900 ms CreateObjectMapping: 0.246300 ms MarkObjects: 2.070000 ms  DeleteObjects: 0.406000 ms)
+Total: 2.869500 ms (FindLiveObjects: 0.316000 ms CreateObjectMapping: 0.430900 ms MarkObjects: 1.883600 ms  DeleteObjects: 0.237800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/prefabos/zombieprefab.prefab
-  artifactKey: Guid(5d01754af1a66e74abc1519512d543e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabos/zombieprefab.prefab using Guid(5d01754af1a66e74abc1519512d543e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7be4cb3b96da9346690f9679f0e8ee37') in 0.366666 seconds
-  Import took 0.390841 seconds .
+  path: Assets/Abandoned buildings
+  artifactKey: Guid(a6649507e7a0bff449f1e116aaa3251d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned buildings using Guid(a6649507e7a0bff449f1e116aaa3251d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0d03381c893829141d4775dc71c45a5') in 0.012634 seconds
+  Import took 0.203715 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.6 MB.
+System memory in use after: 85.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2220.
+Total: 3.348200 ms (FindLiveObjects: 0.255500 ms CreateObjectMapping: 0.080400 ms MarkObjects: 2.783100 ms  DeleteObjects: 0.227300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 585.226701 seconds.
+  path: Assets/Abandoned buildings/Prefab/abandoned_buildings
+  artifactKey: Guid(5dacbcc3f541e744e9dc0e1e50b8a077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned buildings/Prefab/abandoned_buildings using Guid(5dacbcc3f541e744e9dc0e1e50b8a077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b31df76f1135994fa33ff302de419ff') in 0.912834 seconds
+  Import took 0.959928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.960695 seconds.
+  path: Assets/Abandoned buildings/Prefab/abandoned_buildings/birdhouse.prefab
+  artifactKey: Guid(6c43e81dbb4ea18428ee68fedb9a544c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned buildings/Prefab/abandoned_buildings/birdhouse.prefab using Guid(6c43e81dbb4ea18428ee68fedb9a544c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f3433184e2dade046118e058c5ab268') in 0.371967 seconds
+  Import took 0.392888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.546929 seconds.
+  path: Assets/Abandoned buildings/Meshes/abandoned_buildings/junk_wind_broke.FBX
+  artifactKey: Guid(b2b0a9dddce6a8b4e89148caccc4f91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned buildings/Meshes/abandoned_buildings/junk_wind_broke.FBX using Guid(b2b0a9dddce6a8b4e89148caccc4f91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f3bac28a757a5983321bb32c803c33b') in 0.497796 seconds
+  Import took 0.969028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Abandoned buildings/Prefab/abandoned_buildings/junk_window.prefab
+  artifactKey: Guid(a22c9e7ef50fc764da43060141ad70cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned buildings/Prefab/abandoned_buildings/junk_window.prefab using Guid(a22c9e7ef50fc764da43060141ad70cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcbc5034476286dee54e79c2a0c25577') in 0.988576 seconds
+  Import took 0.993751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000537 seconds.
+  path: Assets/Terrenos/Cabin/SurvivalOldHouse01_model.FBX
+  artifactKey: Guid(a7a79460d04a55541b31271ceb6a3709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrenos/Cabin/SurvivalOldHouse01_model.FBX using Guid(a7a79460d04a55541b31271ceb6a3709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f098427f48cb8213c6c67378d38b9638') in 0.378623 seconds
+  Import took 0.383211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Abandoned buildings/Meshes/abandoned_buildings/junk_window.FBX
+  artifactKey: Guid(09f71e761bf789842b8fddb0f7a757f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned buildings/Meshes/abandoned_buildings/junk_window.FBX using Guid(09f71e761bf789842b8fddb0f7a757f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ce97796c7b96fe73ed37d0dc03e95a') in 0.038545 seconds
+  Import took 0.054439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Abandoned buildings/Prefab/abandoned_buildings/junk_wind_broke.prefab
+  artifactKey: Guid(0632adc36f3af70468bf597efa877832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned buildings/Prefab/abandoned_buildings/junk_wind_broke.prefab using Guid(0632adc36f3af70468bf597efa877832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d79624057856499f618a76190e53845') in 0.025781 seconds
+  Import took 0.035180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.353433 seconds.
+  path: Assets/Terrenos/Cabin/PBR_Tiled/OtherMaterials/Windows_atlas.mat
+  artifactKey: Guid(4804e8f6c94552a45a0494210fa35e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrenos/Cabin/PBR_Tiled/OtherMaterials/Windows_atlas.mat using Guid(4804e8f6c94552a45a0494210fa35e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea589264bb785b4e5c2ab319b4562ee') in 1.326499 seconds
+  Import took 1.332867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.552404 seconds.
+  path: Assets/Terrenos/Cabin/PBR_Tiled/Textures/Windows_atlas
+  artifactKey: Guid(69488bf7759eabd4b8acc2f493326aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrenos/Cabin/PBR_Tiled/Textures/Windows_atlas using Guid(69488bf7759eabd4b8acc2f493326aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7abd795af21740d35a8cf980dc94f653') in 0.006507 seconds
+  Import took 0.030513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016277 seconds.
+  path: Assets/Terrenos/Cabin/PBR_Tiled/Textures/Windows_atlas
+  artifactKey: Guid(69488bf7759eabd4b8acc2f493326aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrenos/Cabin/PBR_Tiled/Textures/Windows_atlas using Guid(69488bf7759eabd4b8acc2f493326aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7abd795af21740d35a8cf980dc94f653') in 0.007602 seconds
+  Import took 0.034242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.234074 seconds.
+  path: Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/BrushTextures/canyon04.tif
+  artifactKey: Guid(fd3a283142a57bd4aa8029f5e0705fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/BrushTextures/canyon04.tif using Guid(fd3a283142a57bd4aa8029f5e0705fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa006c04a9c83d4e2a60e04362b34307') in 0.135947 seconds
+  Import took 0.175910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000721 seconds.
+  path: Assets/Terrain/Terrain_0_0_cd6d5360-3d05-459d-a1ba-cf7c0fe790c4.asset
+  artifactKey: Guid(9a49b1aab366c61409fe71c07504e555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/Terrain_0_0_cd6d5360-3d05-459d-a1ba-cf7c0fe790c4.asset using Guid(9a49b1aab366c61409fe71c07504e555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef31efd4534adcebd602596c29f6ff5a') in 0.106449 seconds
+  Import took 0.112924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000421 seconds.
+  path: Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/BrushTextures/mountain04.tif
+  artifactKey: Guid(a1f4f845b9208d64a95cc6177a9b2abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/BrushTextures/mountain04.tif using Guid(a1f4f845b9208d64a95cc6177a9b2abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7021ad609c0f86a583e0c5d2e8853625') in 0.039454 seconds
+  Import took 0.044758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000484 seconds.
+  path: Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/BrushTextures/ridge04.tif
+  artifactKey: Guid(440810c88740a8045949d48b489e443b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/BrushTextures/ridge04.tif using Guid(440810c88740a8045949d48b489e443b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fec4ec1def0ae2f4578306c56c98175') in 0.026758 seconds
+  Import took 0.031468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon04.brush
+  artifactKey: Guid(dc670a42db363de40a6e6d9f231404ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon04.brush using Guid(dc670a42db363de40a6e6d9f231404ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957bc3b420434d70ad0fdbbb4c934eec') in 0.033038 seconds
+  Import took 0.045277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Terrenos/Cabin/PBR_Tiled/MaterialsPBR/Wood_planks_04.mat
+  artifactKey: Guid(16b7a707552540644bd3af43f47bda14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrenos/Cabin/PBR_Tiled/MaterialsPBR/Wood_planks_04.mat using Guid(16b7a707552540644bd3af43f47bda14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b53877dc552309b58f1ac4f777df92') in 0.044848 seconds
+  Import took 0.061127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000485 seconds.
+  path: Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain04.brush
+  artifactKey: Guid(84399f7e9c8b199478532ded97f1ed9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain04.brush using Guid(84399f7e9c8b199478532ded97f1ed9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468c9d7915ad69ed46b8f8f58009c001') in 0.030861 seconds
+  Import took 0.036250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge04.brush
+  artifactKey: Guid(913af1c64ea139348925340c09459a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge04.brush using Guid(913af1c64ea139348925340c09459a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f418fee86f0df2d340bb2743778b00b1') in 0.031214 seconds
+  Import took 0.036577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.971931 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Add Binding@4x.png
+  artifactKey: Guid(862c5ca31844d4a6d9aa804af982ce65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Add Binding@4x.png using Guid(862c5ca31844d4a6d9aa804af982ce65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81884b7635f5e9557287ca3f5f76312') in 2.117364 seconds
+  Import took 2.122934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Button@4x.png
+  artifactKey: Guid(aa356632480554016ab8f4200032981b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Button@4x.png using Guid(aa356632480554016ab8f4200032981b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ea8830a59d2551ab65f6036a1ac027') in 0.096976 seconds
+  Import took 0.108519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000518 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Interactive Binding@4x.png
+  artifactKey: Guid(f4e6ca70dd9734da1a812be882c6364e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Interactive Binding@4x.png using Guid(f4e6ca70dd9734da1a812be882c6364e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'babfbd2cc46b27316dfa396854a47d4a') in 0.116516 seconds
+  Import took 0.153793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000746 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Keyboard@4x.png
+  artifactKey: Guid(123b6218ad27a41af933311ee524dcdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Keyboard@4x.png using Guid(123b6218ad27a41af933311ee524dcdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbbe422f2370024a421d966e6ead439a') in 0.068807 seconds
+  Import took 0.099412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_ChevronUp@4x.png
+  artifactKey: Guid(e46ad23216d074f828f3437b21912c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_ChevronUp@4x.png using Guid(e46ad23216d074f828f3437b21912c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41daa5ac4155fe9d2474abcf699605e9') in 0.060785 seconds
+  Import took 0.081954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Dpad@4x.png
+  artifactKey: Guid(41edf25d451a744e6ad1172a677603bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Dpad@4x.png using Guid(41edf25d451a744e6ad1172a677603bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c562d2ecfc5c4a3fa5efde520991643c') in 0.040298 seconds
+  Import took 0.117129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000533 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_InputControl@4x.png
+  artifactKey: Guid(e2078613efd9e410c8771cbd2717f4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_InputControl@4x.png using Guid(e2078613efd9e410c8771cbd2717f4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6398d02bbfcef1116a155294d9650fb') in 0.058577 seconds
+  Import took 0.074005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000794 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Add Binding@4x.png
+  artifactKey: Guid(4a0ce0eda6ee74c669b13104649e1313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Add Binding@4x.png using Guid(4a0ce0eda6ee74c669b13104649e1313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff93a1edcee6ef79fec0e9efd8e11342') in 0.040237 seconds
+  Import took 0.054806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Axis@4x.png
+  artifactKey: Guid(e01ab4b854c6d4fa3a8d869b67ecd643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Axis@4x.png using Guid(e01ab4b854c6d4fa3a8d869b67ecd643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafb9e34fbfef5bec21f28d866a1e6d4') in 0.048494 seconds
+  Import took 0.051978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Button@4x.png
+  artifactKey: Guid(db3dc7a02ac6d4e90bbe905a44ac265b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Button@4x.png using Guid(db3dc7a02ac6d4e90bbe905a44ac265b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775549379381a791dafd4fc307ec3307') in 0.024182 seconds
+  Import took 0.039203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Pen@4x.png
+  artifactKey: Guid(0aec7c7bf99354f66bc2a1d18bd0b4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Pen@4x.png using Guid(0aec7c7bf99354f66bc2a1d18bd0b4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '558d485674541474bdd5ddea6cbc0084') in 0.025933 seconds
+  Import took 0.030448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Touch@4x.png
+  artifactKey: Guid(6db042035460c4167a6ab8d1ac3c2681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Touch@4x.png using Guid(6db042035460c4167a6ab8d1ac3c2681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9916d2c9148a1128bd77006db2759cc9') in 0.031629 seconds
+  Import took 0.044709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Stick@4x.png
+  artifactKey: Guid(f2fd4d7aa99c94a67a6a137fe979a760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Stick@4x.png using Guid(f2fd4d7aa99c94a67a6a137fe979a760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382a2561b5f496934d634c68aa52beb2') in 0.024599 seconds
+  Import took 0.036140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Position@4x.png
+  artifactKey: Guid(ac4c5ccb2785f4460b2dcfe47010c688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Position@4x.png using Guid(ac4c5ccb2785f4460b2dcfe47010c688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3515cbcf78a43f05665b863674561aac') in 0.055608 seconds
+  Import took 0.059848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/ChevronUp@4x.png
+  artifactKey: Guid(c4f7551c56dfb47a7a105b6579646d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/ChevronUp@4x.png using Guid(c4f7551c56dfb47a7a105b6579646d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef07c5ccf63e47646cab3852838a5f8') in 0.067279 seconds
+  Import took 0.088960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Axis@4x.png
+  artifactKey: Guid(a940917cc397643afb071010cb2143d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Axis@4x.png using Guid(a940917cc397643afb071010cb2143d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ab36d0d9f562d2e64abbf26be003cca') in 0.024332 seconds
+  Import took 0.028281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_ChevronDown@4x.png
+  artifactKey: Guid(0de917098a5b848b1a371e570928ce10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_ChevronDown@4x.png using Guid(0de917098a5b848b1a371e570928ce10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd074b252f88688bda470d38b283f7ea2') in 0.082464 seconds
+  Import took 0.114547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Gamepad@4x.png
+  artifactKey: Guid(83438053370c84456a73f7f95ef821fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Gamepad@4x.png using Guid(83438053370c84456a73f7f95ef821fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ccac0b375d5d13635f46347ff6f5c63') in 0.045794 seconds
+  Import took 0.097078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000630 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Mouse@4x.png
+  artifactKey: Guid(1918e7bff8ff44878a0003977ca03971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Mouse@4x.png using Guid(1918e7bff8ff44878a0003977ca03971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59debd116ac656b857ffb7d2768e6f20') in 0.041534 seconds
+  Import took 0.049179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Joystick@4x.png
+  artifactKey: Guid(d88596134c72c47b99d7d55583f4c6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Joystick@4x.png using Guid(d88596134c72c47b99d7d55583f4c6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c36df8e413510e6e2b0f4aa5877f535') in 0.033370 seconds
+  Import took 0.081921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/ChevronDown@4x.png
+  artifactKey: Guid(d1acbe0a708dc40dc80254764e67ecfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/ChevronDown@4x.png using Guid(d1acbe0a708dc40dc80254764e67ecfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd232e865e026981ddaffa248d4b9ba') in 0.094630 seconds
+  Import took 0.121076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000435 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Orientation@4x.png
+  artifactKey: Guid(de98baf415a2c4d7dbe0de74cb6e171c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Orientation@4x.png using Guid(de98baf415a2c4d7dbe0de74cb6e171c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36a60dbfe309dcd5c8f88f5069d35a3') in 0.029451 seconds
+  Import took 0.035254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.141419 seconds.
+  path: Assets/ApocalypticBuildings/ApocalypticProps
+  artifactKey: Guid(04a26cd797306d041a79ded7c7d897d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ApocalypticBuildings/ApocalypticProps using Guid(04a26cd797306d041a79ded7c7d897d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2e6f6ab1fdc460cc6f51e6c7632482') in 0.012442 seconds
+  Import took 0.042116 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000978 seconds.
+Registered in 0.000802 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.391 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1706 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.9 MB.
-System memory in use after: 136.8 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2231.
-Total: 3.198300 ms (FindLiveObjects: 0.270000 ms CreateObjectMapping: 0.061400 ms MarkObjects: 2.655200 ms  DeleteObjects: 0.210300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000853 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -117,12 +433,36 @@ RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
 - Completed reload, in  1.290 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1706 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.9 MB.
-System memory in use after: 136.9 MB.
+Unloading 1707 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 123.6 MB.
+System memory in use after: 123.6 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2234.
-Total: 3.167900 ms (FindLiveObjects: 0.369000 ms CreateObjectMapping: 0.085500 ms MarkObjects: 2.489000 ms  DeleteObjects: 0.223300 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2275.
+Total: 2.354200 ms (FindLiveObjects: 0.212900 ms CreateObjectMapping: 0.065600 ms MarkObjects: 1.855000 ms  DeleteObjects: 0.219000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 560.566696 seconds.
+  path: Assets/Rusty Vehicles
+  artifactKey: Guid(46b9d27a3d1374e4fb015dff1b4b8925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rusty Vehicles using Guid(46b9d27a3d1374e4fb015dff1b4b8925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '560a4f7d36a652b82e5db04aa1e5f6d5') in 0.015057 seconds
+  Import took 0.019684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.710136 seconds.
+  path: Assets/T90/T90U5prefabs/T90LP Desert Camo.prefab
+  artifactKey: Guid(3b95bec82dae4484eafd516e73cc2623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/T90/T90U5prefabs/T90LP Desert Camo.prefab using Guid(3b95bec82dae4484eafd516e73cc2623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36677cf62ea58bb8b5a1406fae164de4') in 1.928605 seconds
+  Import took 1.933126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.000394 seconds.
+  path: Assets/T90/T90U5prefabs/T90LP Green.prefab
+  artifactKey: Guid(cb4fd6a623385fb4fb454f9e6c5c6cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/T90/T90U5prefabs/T90LP Green.prefab using Guid(cb4fd6a623385fb4fb454f9e6c5c6cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '606ee9a8c7f36b151731f5134b2c8360') in 0.088424 seconds
+  Import took 0.092591 seconds .
 
