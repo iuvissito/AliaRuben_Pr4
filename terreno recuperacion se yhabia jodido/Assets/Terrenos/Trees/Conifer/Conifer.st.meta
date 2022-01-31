@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 2c502558b9300314185ad6541d6d6bf8
 SpeedTreeImporter:
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bark_LOD0
+    second: {fileID: 2100000, guid: aaaf49f86cbd2d2479aa5bd2632ce4ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bark_LOD1
+    second: {fileID: 2100000, guid: d0647608cf8de9d47a77382d69a758c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bark_LOD2
+    second: {fileID: 2100000, guid: 6125c0819a445714883c33f8deabbb31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cap_LOD0
+    second: {fileID: 2100000, guid: 0325fb611f8faf84e89117aace8a9818, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cap_LOD1
+    second: {fileID: 2100000, guid: b6d6c67a778770341a2bf7913e86dce9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Conifer_Billboard_LOD3
+    second: {fileID: 2100000, guid: e8a8fccb4b98ab84ea78ebe1de908249, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Conifer_LOD0
+    second: {fileID: 2100000, guid: d4ddefc4ebe238c44b63dcc229cd35c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Conifer_LOD1
+    second: {fileID: 2100000, guid: 3b705dc9313b91a459652215b2e1e998, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Conifer_LOD2
+    second: {fileID: 2100000, guid: 17df68cdbfbcd4146995dbc8d06f092c, type: 2}
   serializedVersion: 6
   mainColor: {r: 1, g: 1, b: 1, a: 1}
   hueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
