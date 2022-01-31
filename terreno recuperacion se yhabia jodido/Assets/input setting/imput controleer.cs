@@ -49,6 +49,14 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""aim"",
+                    ""type"": ""Button"",
+                    ""id"": ""4e0ae599-3305-4938-a77b-7f529b33a8cf"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -106,18 +114,29 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
                     ""action"": ""move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7597cf70-cf02-4eef-be46-626c5e7a0852"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
         {
-            ""name"": ""New action map"",
+            ""name"": ""cam"",
             ""id"": ""ab7f278e-15da-43d2-af39-d80ba7115961"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
+                    ""name"": ""pivot"",
+                    ""type"": ""Value"",
                     ""id"": ""f7c3cc9d-662c-47b3-b5e5-2a082d45afa4"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -126,11 +145,11 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""c3a3aed5-eeb1-4c49-b739-00c57763e77e"",
-                    ""path"": """",
+                    ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""pivot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -145,9 +164,10 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
         m_moverse_move = m_moverse.FindAction("move", throwIfNotFound: true);
         m_moverse_straffl = m_moverse.FindAction("straffl", throwIfNotFound: true);
         m_moverse_straffr = m_moverse.FindAction("straffr", throwIfNotFound: true);
-        // New action map
-        m_Newactionmap = asset.FindActionMap("New action map", throwIfNotFound: true);
-        m_Newactionmap_Newaction = m_Newactionmap.FindAction("New action", throwIfNotFound: true);
+        m_moverse_aim = m_moverse.FindAction("aim", throwIfNotFound: true);
+        // cam
+        m_cam = asset.FindActionMap("cam", throwIfNotFound: true);
+        m_cam_pivot = m_cam.FindAction("pivot", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -201,6 +221,7 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
     private readonly InputAction m_moverse_move;
     private readonly InputAction m_moverse_straffl;
     private readonly InputAction m_moverse_straffr;
+    private readonly InputAction m_moverse_aim;
     public struct MoverseActions
     {
         private @Imputcontroleer m_Wrapper;
@@ -209,6 +230,7 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
         public InputAction @move => m_Wrapper.m_moverse_move;
         public InputAction @straffl => m_Wrapper.m_moverse_straffl;
         public InputAction @straffr => m_Wrapper.m_moverse_straffr;
+        public InputAction @aim => m_Wrapper.m_moverse_aim;
         public InputActionMap Get() { return m_Wrapper.m_moverse; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -230,6 +252,9 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
                 @straffr.started -= m_Wrapper.m_MoverseActionsCallbackInterface.OnStraffr;
                 @straffr.performed -= m_Wrapper.m_MoverseActionsCallbackInterface.OnStraffr;
                 @straffr.canceled -= m_Wrapper.m_MoverseActionsCallbackInterface.OnStraffr;
+                @aim.started -= m_Wrapper.m_MoverseActionsCallbackInterface.OnAim;
+                @aim.performed -= m_Wrapper.m_MoverseActionsCallbackInterface.OnAim;
+                @aim.canceled -= m_Wrapper.m_MoverseActionsCallbackInterface.OnAim;
             }
             m_Wrapper.m_MoverseActionsCallbackInterface = instance;
             if (instance != null)
@@ -246,52 +271,56 @@ public class @Imputcontroleer : IInputActionCollection, IDisposable
                 @straffr.started += instance.OnStraffr;
                 @straffr.performed += instance.OnStraffr;
                 @straffr.canceled += instance.OnStraffr;
+                @aim.started += instance.OnAim;
+                @aim.performed += instance.OnAim;
+                @aim.canceled += instance.OnAim;
             }
         }
     }
     public MoverseActions @moverse => new MoverseActions(this);
 
-    // New action map
-    private readonly InputActionMap m_Newactionmap;
-    private INewactionmapActions m_NewactionmapActionsCallbackInterface;
-    private readonly InputAction m_Newactionmap_Newaction;
-    public struct NewactionmapActions
+    // cam
+    private readonly InputActionMap m_cam;
+    private ICamActions m_CamActionsCallbackInterface;
+    private readonly InputAction m_cam_pivot;
+    public struct CamActions
     {
         private @Imputcontroleer m_Wrapper;
-        public NewactionmapActions(@Imputcontroleer wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_Newactionmap_Newaction;
-        public InputActionMap Get() { return m_Wrapper.m_Newactionmap; }
+        public CamActions(@Imputcontroleer wrapper) { m_Wrapper = wrapper; }
+        public InputAction @pivot => m_Wrapper.m_cam_pivot;
+        public InputActionMap Get() { return m_Wrapper.m_cam; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(NewactionmapActions set) { return set.Get(); }
-        public void SetCallbacks(INewactionmapActions instance)
+        public static implicit operator InputActionMap(CamActions set) { return set.Get(); }
+        public void SetCallbacks(ICamActions instance)
         {
-            if (m_Wrapper.m_NewactionmapActionsCallbackInterface != null)
+            if (m_Wrapper.m_CamActionsCallbackInterface != null)
             {
-                @Newaction.started -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnNewaction;
-                @Newaction.performed -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnNewaction;
-                @Newaction.canceled -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnNewaction;
+                @pivot.started -= m_Wrapper.m_CamActionsCallbackInterface.OnPivot;
+                @pivot.performed -= m_Wrapper.m_CamActionsCallbackInterface.OnPivot;
+                @pivot.canceled -= m_Wrapper.m_CamActionsCallbackInterface.OnPivot;
             }
-            m_Wrapper.m_NewactionmapActionsCallbackInterface = instance;
+            m_Wrapper.m_CamActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Newaction.started += instance.OnNewaction;
-                @Newaction.performed += instance.OnNewaction;
-                @Newaction.canceled += instance.OnNewaction;
+                @pivot.started += instance.OnPivot;
+                @pivot.performed += instance.OnPivot;
+                @pivot.canceled += instance.OnPivot;
             }
         }
     }
-    public NewactionmapActions @Newactionmap => new NewactionmapActions(this);
+    public CamActions @cam => new CamActions(this);
     public interface IMoverseActions
     {
         void OnRun(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
         void OnStraffl(InputAction.CallbackContext context);
         void OnStraffr(InputAction.CallbackContext context);
+        void OnAim(InputAction.CallbackContext context);
     }
-    public interface INewactionmapActions
+    public interface ICamActions
     {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnPivot(InputAction.CallbackContext context);
     }
 }

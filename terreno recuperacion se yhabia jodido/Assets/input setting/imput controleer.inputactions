@@ -36,6 +36,14 @@
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "aim",
+                    "type": "Button",
+                    "id": "4e0ae599-3305-4938-a77b-7f529b33a8cf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -93,18 +101,29 @@
                     "action": "move",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7597cf70-cf02-4eef-be46-626c5e7a0852",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
         {
-            "name": "New action map",
+            "name": "cam",
             "id": "ab7f278e-15da-43d2-af39-d80ba7115961",
             "actions": [
                 {
-                    "name": "New action",
-                    "type": "Button",
+                    "name": "pivot",
+                    "type": "Value",
                     "id": "f7c3cc9d-662c-47b3-b5e5-2a082d45afa4",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 }
@@ -113,11 +132,11 @@
                 {
                     "name": "",
                     "id": "c3a3aed5-eeb1-4c49-b739-00c57763e77e",
-                    "path": "",
+                    "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "pivot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
